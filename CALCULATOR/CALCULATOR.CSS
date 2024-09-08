@@ -1,0 +1,110 @@
+.MIDDLE{text-align: center;
+    text-transform: uppercase;
+      background-image: linear-gradient(
+        -225deg,
+        #f84e06 0%,
+        #740ee2 29%,
+        #15fd09 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+          font-size: 60px;
+      }
+    
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+      }
+
+
+.auto{
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+    place-items: center;
+}
+
+.toggle{
+    margin: 10px;
+    padding: 20px;
+    background-color: black;
+    width: auto;
+    height: auto;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgb(233, 229, 229), 0 0 50px white;
+ }
+input{
+    text-align: right;
+    text-shadow: 0 0 5px cyan;
+    border: none;
+    width: 260px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    background: transparent;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.BLOCK{
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    background-color: #aae0fd;
+    color: #000;
+    box-sizing: border-box;
+}
+.BLOCK:hover{
+    color:#aae0fd;
+    background-color: black;
+    box-shadow: 0 0 25px aqua;
+}
+
+.operator{
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 30px;
+    background-color:aqua;
+    color: black;
+    cursor: pointer;
+    transition: all 200ms ease;
+    box-sizing: border-box;
+}
+.operator:hover{
+    color: aqua;
+    background-color: black;  
+    box-shadow: 0 0 25px aqua;
+}
+.operator#equal{
+    height:130px ;
+}
+.operator#clear{
+background-color: black;
+color: orange;
+}
+.operator#clear:hover{
+    background-color: orange;
+    color: black;
+}
